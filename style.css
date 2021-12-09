@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+--dark-cyan: hsl(185, 75%, 39%);
+--very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--dark-grayish-blue: hsl(227, 10%, 46%);
+--dark-gray: hsl(0, 0%, 59%);
+--font: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--dark-cyan);
+    font-family: var(--font);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    text-align: center;
+    max-width: 35rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.upper {
+    height: 15rem;
+    width: 35rem;
+    background-image: url('./images/bg-pattern-card.svg');
+    background-size: cover;
+}
+
+.img-victor img {
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -5rem auto -3rem auto;
+    border: .5rem solid white;
+}
+
+.card {
+    margin-top: 5.4rem;
+    margin-bottom: -7.5rem;
+    height: 25rem;
+    line-height: 2.8rem;
+    font-family: var(--font);
+}
+
+.card .name {
+    font-size: 1.8rem;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.card span#years {
+    color: var(--dark-gray);
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.card > p {
+    color: var(--dark-gray);
+    font-size: 1.5rem;
+}
+
+.numbers .act {
+    display: block;
+    font-weight: 400;
+    color: var(--dark-gray);
+    font-size: 1rem;
+    letter-spacing: .2rem;
+}
+
+.numbers > h2 {
+    font-size: 1.9rem;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.numbers {
+    padding-top: 2.2rem;
+    padding-right: 4rem;
+    border-top: .1rem solid hsla(0, 0%, 59%, 0.250);
+    padding-left: 4rem;
+    margin-top: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+footer {
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.attribution {
+    background-color: var(--very-dark-desaturated-blue);
+    color: rgb(16, 222, 236);
+    padding: .8rem;
+    font-size: 1.5rem;
+
+}
+
+.attribution a {
+    text-decoration: none;
+    color: white;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+    color: cyan;
+}
